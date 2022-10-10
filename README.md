@@ -1,4 +1,4 @@
-#### Full-Stack Web Development for the BEDU/Santander Program Scholarship
+#### Full-Stack Web Development for the BEDU/Santander Scholarship Program 
 
 #Includes:
 - BEDU Phase 0: 2000 students were selected to participate in an online model with only online lessons
