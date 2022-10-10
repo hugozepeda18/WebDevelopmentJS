@@ -10,20 +10,13 @@ function getTokenFromHeader(req) {
 
 const auth = {
     required: function (req, res, next){
-        if (req.user) {
-            return next();
-        }
         if(!req.auth || !req.auth.user) {
             return res.sendStatus(401);
         }
-        req.bypass = true;
         next();
     },
     isAdmin: function (req, res, next) {
-        if(req.bypass) {
-            console.log("BYPASS");
-            return next();
-        }
+        console.log(req.auth.user);
         if(!req.auth) {
             return res.sendStatus(401);
         }

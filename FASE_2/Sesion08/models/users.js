@@ -45,8 +45,7 @@ const User = sequelize.define('User', {
             isCreditCard: true
         }
     },
-    tipo_tarjeta: {type: DataTypes.CHAR(64) },
-    admin: {type: DataTypes.BOOLEAN }
+    tipo_tarjeta: {type: DataTypes.CHAR(64) }
 });
 
 User.createPassword = function(plainText) {
